@@ -17,7 +17,6 @@ def runVideo(request):
         filename = fs.save(uploaded_file.name, uploaded_file)
         print(filename)
     
-    
         video = filename
         frames_dir = 'video_info/frames'
         cap = cv2.VideoCapture(video)
